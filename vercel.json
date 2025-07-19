@@ -6,22 +6,24 @@
 	{
 		"source": "/app-ads.txt",
 		"has": [
-			"type": "host",
-			"value": "victorycat.dev"
+			{
+				"type": "host",
+				"value": "victorycat.dev"
+			}
 		],
 		"destination": "/app-ads.txt",
 		"statusCode": 200
 	},
 	{
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "victorycat.dev"
-        }
-      ],
-      "destination": "https://www.victorycat.dev/:path*",
-      "statusCode": 308
+		"source": "/:path*",
+		"has": [
+			{
+				"type": "host",
+				"value": "victorycat.dev"
+			}
+		],
+		"destination": "https://www.victorycat.dev/:path*",
+		"statusCode": 308
     }
   ]
 }
