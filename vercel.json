@@ -3,8 +3,17 @@
     { "source": "/app-ads.txt", "destination": "/app-ads.txt" }
   ],
   "redirects": [
-    {
-      "source": "/:path((?!app-ads\.txt$).*)",
+	{
+		"source": "/app-ads.txt",
+		"has": [
+			"type": "host",
+			"value": "victorycat.dev"
+		],
+		"destination": "/app-ads.txt",
+		"statusCode": 200
+	},
+	{
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
