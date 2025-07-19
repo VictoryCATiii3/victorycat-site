@@ -4,14 +4,14 @@
   ],
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "has": [
         {
           "type": "host",
           "value": "victorycat.dev"
         }
       ],
-      "destination": "https://www.victorycat.dev/:1",
+      "destination": "https://www.victorycat.dev/:path*",
       "statusCode": 308
     }
   ]
